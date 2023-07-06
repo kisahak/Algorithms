@@ -10,7 +10,7 @@ def numIslands( grid) -> int:
     rows,cols = len(grid),len(grid[0]) #matrix size 
     visit = set() #does not allow duplicate values to be added 
     islands = 0
-    def BFS(r,c): #breathe first search algorithm to check all neighbors and update a queue within the island grid 
+    def BFS(r,c): #breadth first search algorithm to check all neighbors and update a queue within the island grid 
         q = collections.deque()
         q.append((r,c))
         visit.add((r,c)) #adding specific row/column to queue and visited set
