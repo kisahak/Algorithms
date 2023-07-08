@@ -1,5 +1,11 @@
-# Definition for a binary tree node.
-import collections
+# Leet Code 199
+# This program  uses a breadth first search for a level order traversal over a tree 
+# During the breadth first search, the right most node 
+# within each level is saved and appended into a list 
+# the remaining ones are added and removed from a priority queue 
+
+
+import collections 
 from typing import List, Optional
 
 
